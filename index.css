@@ -1,0 +1,154 @@
+:root{
+    --kuning: #FEF400;
+    --abu-abu: #C1C1C1;
+    --hitam: #221A1A;
+    --merah: #D4271E;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/header1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* NAV */
+nav{
+    display: flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.logo{
+    height: 80px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--kuning);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* HEADER-TEXT */
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 35px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+.hero-btn:hover{
+    border: 1px solid var(--kuning);
+    background: var(--kuning);
+    color: var(--hitam);
+}
+
+/* ROW */
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* NEWS */
+.news{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.news-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    padding: 10px;
+}
+
+.news-col:hover{
+    background-color: var(--abu-abu);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.news-col img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.news-col p{
+    padding-bottom: 10px;
+}
+
+.news-col h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
